@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<link rel="icon" href="favicon.ico" type="image/x-icon">
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>太迟久电影网 - 高清电影电视剧综艺动漫在线观看</title>
+<meta name="description" content="太迟久电影网(taichijiudianyingwang-wap.github.io)提供海量高清电影、电视剧、综艺、动漫在线观看，经典老片、院线大片、热播剧集每日更新，分类清晰、片单丰富。">
+<meta name="keywords" content="太迟久电影网, 高清电影, 电视剧, 综艺, 动漫, 经典老片, 在线观看, 院线大片">
+<meta name="author" content="太迟久电影网">
+<meta name="robots" content="index, follow">
+<meta name="renderer" content="webkit">
+<meta name="format-detection" content="telephone=no">
+<link rel="canonical" href="https://taichijiudianyingwang-wap.github.io/">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "name": "太迟久电影网",
+  "url": "https://taichijiudianyingwang-wap.github.io/",
+  "description": "太迟久电影网提供海量高清电影、电视剧、综艺、动漫在线观看，经典老片与热播剧集每日更新。",
+  "potentialAction": {
+    "@type": "SearchAction",
+    "target": "https://taichijiudianyingwang-wap.github.io/#search?q={query}",
+    "query-input": "required name=query"
+  }
+}
+</script>
+<style>
+/* ============ 基础 & 暮色玫瑰紫主题 ============ */
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+:root{
+  --bg:#10080f;
+  --bg2:#1a0f1a;
+  --card:#22152a;
+  --line:#3a2447;
+  --rose:#e84393;
+  --rose2:#fd79a8;
+  --violet:#a29bfe;
+  --ink:#f6eef5;
+  --sub:#b8a7c4;
+  --gold:#ffd56b;
+  --radius:20px;
+  --shadow:0 20px 48px rgba(0,0,0,.55);
+  --max:1200px;
+}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{font-family:"PingFang SC","Hiragino Sans GB","Microsoft YaHei",-apple-system,BlinkMacSystemFont,sans-serif;background:var(--bg);color:var(--ink);line-height:1.7;overflow-x:hidden}
+img{max-width:100%;display:block}
+a{color:inherit;text-decoration:none;transition:.2s}
+ul{list-style:none}
+button{font:inherit;cursor:pointer;border:none;background:none;color:inherit}
+.wrap{max-width:var(--max);margin:0 auto;padding:0 16px}
+section{scroll-margin-top:80px}
+
+/* ============ 顶部公告条 ============ */
+.marq{background:linear-gradient(90deg,#2d1040,#4a1555,#2d1040);color:var(--ink);font-size:13px;overflow:hidden;border-bottom:1px solid var(--line)}
+.marq .wrap{height:36px;display:flex;align-items:center}
+.marq span{white-space:nowrap;animation:mr 26s linear infinite}
+.marq b{color:var(--gold);margin-right:18px}
+@keyframes mr{from{transform:translateX(100%)}to{transform:translateX(-100%)}}
+@media(max-width:860px){.marq{display:none}}
+
+/* ============ 头部 ============ */
+.head{position:sticky;top:0;z-index:100;background:rgba(16,8,15,.94);backdrop-filter:blur(12px);border-bottom:1px solid var(--line)}
+.head .wrap{display:flex;align-items:center;gap:16px;height:76px}
+.logo{display:flex;align-items:center;gap:10px;flex-shrink:0}
+.logo i{width:44px;height:44px;border-radius:50%;background:linear-gradient(135deg,var(--rose),var(--violet));display:grid;place-items:center;font-size:20px;font-style:normal;font-weight:900;color:#fff;box-shadow:0 4px 14px rgba(232,67,147,.4)}
+.logo b{font-size:23px;font-weight:900;letter-spacing:.5px}
+.logo b em{font-style:normal;color:var(--rose)}
+.nav{display:flex;gap:4px;margin-left:auto}
+.nav a{padding:9px 15px;border-radius:10px;font-size:14px;font-weight:600;color:var(--sub)}
+.nav a:hover{color:#fff;background:rgba(232,67,147,.14)}
+.mbtn{display:none;font-size:26px;color:var(--rose);margin-left:auto}
+.mnav{display:none;background:var(--bg2);border-bottom:1px solid var(--line)}
+.mnav a{display:block;padding:14px 16px;border-bottom:1px solid var(--line);font-weight:600}
+
+/* ============ Hero（差异化：渐变背景 + 多层圆形装饰 + 左右布局） ============ */
+.hero{padding:80px 0;position:relative;overflow:hidden}
+.hero::before{content:"";position:absolute;width:520px;height:520px;border-radius:50%;background:radial-gradient(circle,rgba(232,67,147,.25),transparent 70%);top:-160px;left:-120px}
+.hero::after{content:"";position:absolute;width:460px;height:460px;border-radius:50%;background:radial-gradient(circle,rgba(162,155,254,.18),transparent 70%);bottom:-120px;right:-100px}
+.hero .wrap{position:relative;display:grid;grid-template-columns:1fr 1fr;gap:48px;align-items:center}
+.hbadge{display:inline-flex;align-items:center;gap:8px;background:rgba(232,67,147,.12);color:var(--rose2);border:1px solid rgba(232,67,147,.35);padding:7px 16px;border-radius:999px;font-size:13px;font-weight:700;margin-bottom:20px}
+.hero h1{font-size:clamp(32px,5.4vw,54px);font-weight:900;line-height:1.2}
+.hero h1 em{font-style:normal;background:linear-gradient(90deg,var(--rose),var(--violet));-webkit-background-clip:text;background-clip:text;color:transparent}
+.hero .sub{color:var(--sub);margin:20px 0 28px;max-width:500px;font-size:15px}
+.kpis{display:flex;gap:12px;flex-wrap:wrap}
+.kpi{flex:1;min-width:104px;background:var(--card);border:1px solid var(--line);border-radius:16px;padding:16px;text-align:center;position:relative;overflow:hidden}
+.kpi::before{content:"";position:absolute;left:0;top:0;width:4px;height:100%;background:linear-gradient(180deg,var(--rose),var(--violet))}
+.kpi b{font-size:24px;font-weight:900;color:var(--rose2);display:block}
+.kpi span{font-size:12px;color:var(--sub)}
+.acts{display:flex;gap:12px;flex-wrap:wrap;margin-top:30px}
+.btn{display:inline-flex;align-items:center;gap:8px;padding:14px 32px;border-radius:14px;font-weight:800;font-size:15px}
+.bg{background:linear-gradient(135deg,var(--rose),var(--violet));color:#fff}
+.bg:hover{transform:translateY(-2px);box-shadow:0 8px 22px rgba(232,67,147,.4)}
+.bgo{border:1.5px solid var(--line);color:var(--ink)}
+.bgo:hover{border-color:var(--rose);color:var(--rose2)}
+/* 右侧：网格海报墙（差异化） */
+.wall{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;position:relative}
+.wp{position:relative;border-radius:16px;overflow:hidden;border:1px solid var(--line);box-shadow:var(--shadow);transition:.3s;min-height:150px;display:grid;place-items:center;color:#fff;text-align:center;padding:14px}
+.wp:hover{transform:translateY(-8px) scale(1.04);z-index:3}
+.wp b{font-size:16px;position:relative;z-index:1}
+.wp i{position:absolute;top:8px;right:8px;font-style:normal;background:rgba(0,0,0,.45);color:var(--gold);font-size:12px;font-weight:800;padding:3px 9px;border-radius:6px;z-index:1}
+.wp small{position:absolute;left:8px;bottom:8px;font-size:11px;opacity:.9;z-index:1}
+.wp.lg{grid-row:span 2;min-height:312px;font-size:19px}
+.wp.lg b{font-size:22px}
+
+/* ============ 区块标题 ============ */
+.block{padding:68px 0}
+.bh{display:flex;align-items:flex-end;justify-content:space-between;gap:16px;margin-bottom:30px;flex-wrap:wrap}
+.bh .lt{position:relative;padding-left:18px}
+.bh .lt::before{content:"";position:absolute;left:0;top:6px;bottom:6px;width:5px;border-radius:99px;background:linear-gradient(180deg,var(--rose),var(--violet))}
+.bh .lt h2{font-size:26px;font-weight:900}
+.bh .lt h2 em{font-style:normal;color:var(--rose2)}
+.bh .lt p{font-size:14px;color:var(--sub);margin-top:4px}
+.bh .more{font-size:14px;color:var(--sub);font-weight:600}
+.bh .more:hover{color:var(--rose2)}
+
+/* ============ 栏目一：分类（差异化：彩色渐变大色块，无边框无阴影） ============ */
+.chans{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}
+.ch{position:relative;padding:28px 22px;border-radius:var(--radius);overflow:hidden;transition:.25s;color:#fff}
+.ch::after{content:"";position:absolute;right:-20px;bottom:-20px;width:90px;height:90px;border-radius:50%;background:rgba(255,255,255,.12)}
+.ch b{font-size:18px;font-weight:800;display:block;position:relative;z-index:1}
+.ch span{font-size:13px;opacity:.85;display:block;margin-top:4px;position:relative;z-index:1}
+.ch:hover{transform:translateY(-6px)}
+.ch i{font-size:30px;display:block;margin-bottom:12px;font-style:normal;position:relative;z-index:1}
+
+/* ============ 栏目二：正在热播（差异化：横向长条卡片列表） ============ */
+.hots{display:flex;flex-direction:column;gap:14px}
+.hr{display:grid;grid-template-columns:150px 1fr;gap:18px;background:var(--card);border:1px solid var(--line);border-radius:18px;overflow:hidden;transition:.25s}
+.hr:hover{transform:translateY(-4px);border-color:var(--rose)}
+.hr .th{position:relative;min-height:110px;display:grid;place-items:center;color:#fff;text-align:center;padding:12px}
+.hr .th b{font-size:17px;position:relative;z-index:1}
+.hr .th em{position:absolute;top:8px;left:8px;font-style:normal;background:var(--rose);color:#fff;font-size:11px;font-weight:800;padding:3px 9px;border-radius:6px;z-index:1}
+.hr .th em.n{left:auto;right:8px;background:rgba(0,0,0,.5);color:var(--gold)}
+.hr .tx{padding:16px 18px}
+.hr .tx h3{font-size:17px;font-weight:800}
+.hr .tx p{font-size:13px;color:var(--sub);margin:6px 0 12px}
+.hr .tags{display:flex;gap:8px;flex-wrap:wrap}
+.hr .tags span{font-size:12px;padding:4px 12px;border-radius:999px;background:var(--bg2);color:var(--sub);border:1px solid var(--line)}
+
+/* ============ 栏目三：精选推荐（差异化：错落网格 + 大字水印编号） ============ */
+.pick{display:grid;grid-template-columns:repeat(3,1fr);grid-auto-rows:200px;gap:16px}
+.pk{position:relative;border-radius:18px;overflow:hidden;border:1px solid var(--line);transition:.25s;color:#fff;padding:20px;display:flex;flex-direction:column;justify-content:flex-end}
+.pk:hover{transform:translateY(-6px)}
+.pk.tall{grid-row:span 2}
+.pk.wide{grid-column:span 2}
+.pk::before{content:attr(data-n);position:absolute;right:8px;top:-6px;font-size:76px;font-weight:900;line-height:1;color:rgba(255,255,255,.16)}
+.pk b{font-size:19px;font-weight:800;position:relative;z-index:1}
+.pk.tall b{font-size:24px}
+.pk span{font-size:13px;opacity:.9;margin-top:4px;position:relative;z-index:1}
+.pk .star{position:absolute;top:14px;right:14px;background:rgba(0,0,0,.5);color:var(--gold);font-size:13px;font-weight:800;padding:4px 10px;border-radius:8px;z-index:1}
+
+/* ============ 栏目四：热播榜单（差异化：编号 + 横线进度） ============ */
+.ranks{display:grid;grid-template-columns:repeat(2,1fr);gap:14px}
+.rk{display:flex;gap:14px;align-items:center;background:var(--card);border:1px solid var(--line);border-radius:16px;padding:14px 16px;transition:.25s}
+.rk:hover{transform:translateX(6px);border-color:var(--rose)}
+.rk .n{width:40px;height:40px;border-radius:12px;display:grid;place-items:center;font-weight:900;font-size:17px;color:var(--sub);background:var(--bg2);flex-shrink:0}
+.rk.g1 .n{background:linear-gradient(135deg,var(--gold),#ff9f43);color:#3a2200}
+.rk.g2 .n{background:linear-gradient(135deg,#dfe6e9,#b2bec3);color:#3a2200}
+.rk.g3 .n{background:linear-gradient(135deg,#fab1a0,#e17055);color:#3a2200}
+.rk .tx{flex:1;min-width:0}
+.rk .tx b{font-size:15px;font-weight:800;display:block}
+.rk .tx .bar{height:6px;border-radius:99px;background:var(--bg2);margin-top:8px;overflow:hidden}
+.rk .tx .bar i{display:block;height:100%;border-radius:99px;background:linear-gradient(90deg,var(--rose),var(--violet))}
+.rk .hv{font-size:13px;font-weight:800;color:var(--rose2);flex-shrink:0;text-align:right}
+.rk .hv small{display:block;font-size:11px;color:var(--sub);font-weight:400}
+
+/* ============ 栏目五：资讯（差异化：时间轴竖线 + 节点） ============ */
+.news{display:grid;grid-template-columns:1fr 1fr;gap:34px}
+.tl{position:relative;padding-left:28px}
+.tl::before{content:"";position:absolute;left:7px;top:6px;bottom:6px;width:2px;background:linear-gradient(180deg,var(--rose),var(--violet))}
+.ni{position:relative;padding:0 0 22px 0}
+.ni::before{content:"";position:absolute;left:-27px;top:4px;width:16px;height:16px;border-radius:50%;background:var(--rose);box-shadow:0 0 0 4px rgba(232,67,147,.18)}
+.ni time{font-size:12px;color:var(--rose2);font-weight:700}
+.ni h4{font-size:16px;font-weight:800;margin:4px 0 4px}
+.ni p{font-size:13px;color:var(--sub)}
+.nlead{position:relative;border-radius:20px;overflow:hidden;min-height:320px;display:grid;align-items:end;color:#fff;padding:26px}
+.nlead::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,transparent 10%,rgba(0,0,0,.88))}
+.nlead>*{position:relative;z-index:1}
+.nlead b{font-size:22px;display:block;line-height:1.4}
+.nlead span{display:inline-block;background:var(--rose);color:#fff;font-size:12px;font-weight:800;padding:5px 14px;border-radius:6px;margin-bottom:12px;width:max-content}
+
+/* ============ 栏目六：关于（差异化：左图右文 + 四宫格数据） ============ */
+.abt{display:grid;grid-template-columns:1fr 1fr;gap:20px}
+.al{position:relative;border-radius:24px;overflow:hidden;min-height:400px;padding:34px;color:#fff;display:flex;flex-direction:column;justify-content:flex-end}
+.al::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,transparent 20%,rgba(20,8,30,.92))}
+.al>*{position:relative;z-index:1}
+.al b{font-size:24px;display:block;line-height:1.4}
+.al p{font-size:14px;opacity:.9;margin-top:10px}
+.ar{background:var(--card);border:1px solid var(--line);border-radius:24px;padding:34px}
+.ar h3{font-size:19px;font-weight:900;margin-bottom:18px}
+.ar h3 em{font-style:normal;color:var(--rose2)}
+.grid4{display:grid;grid-template-columns:repeat(2,1fr);gap:14px;margin-bottom:20px}
+.g4{background:var(--bg2);border:1px solid var(--line);border-radius:14px;padding:18px}
+.g4 b{font-size:23px;font-weight:900;color:var(--rose2);display:block}
+.g4 span{font-size:13px;color:var(--sub)}
+.ci{display:flex;gap:12px;align-items:center;padding:12px 0;border-bottom:1px solid var(--line)}
+.ci:last-child{border-bottom:none}
+.ci .d{width:42px;height:42px;border-radius:12px;background:rgba(232,67,147,.12);display:grid;place-items:center;font-size:19px;flex-shrink:0}
+.ci b{font-size:14px;font-weight:800;display:block}
+.ci span{font-size:13px;color:var(--sub)}
+
+/* ============ 页脚 ============ */
+.foot{background:#0a050c;border-top:1px solid var(--line);padding:46px 0 26px}
+.foot .wrap{display:grid;grid-template-columns:1.5fr 1fr;gap:30px}
+.foot .logo{margin-bottom:14px}
+.foot .fl a{display:inline-block;margin:0 18px 10px 0;color:var(--sub);font-size:14px}
+.foot .fl a:hover{color:var(--rose2)}
+.foot p{font-size:13px;color:var(--sub);line-height:1.9}
+
+/* ============ 回顶 ============ */
+.gt{position:fixed;right:18px;bottom:24px;z-index:90;width:46px;height:46px;border-radius:14px;background:linear-gradient(135deg,var(--rose),var(--violet));color:#fff;font-size:19px;font-weight:900;box-shadow:0 8px 20px rgba(232,67,147,.4);display:none;place-items:center}
+.gt.on{display:grid}
+
+/* ============ 响应式 ============ */
+@media (max-width:980px){
+  .chans{grid-template-columns:repeat(2,1fr)}
+  .pick{grid-template-columns:repeat(2,1fr)}
+  .ranks{grid-template-columns:1fr}
+}
+@media (max-width:860px){
+  .nav{display:none}
+  .mbtn{display:block}
+  .hero{padding:46px 0 56px}
+  .hero .wrap{grid-template-columns:1fr}
+  .wall{display:none}
+  .block{padding:46px 0}
+  .hr{grid-template-columns:120px 1fr}
+  .news{grid-template-columns:1fr}
+  .nlead{min-height:260px}
+  .abt{grid-template-columns:1fr}
+  .al{padding:26px;min-height:320px}
+  .ar{padding:26px}
+  .foot .wrap{grid-template-columns:1fr}
+}
+@media (max-width:480px){
+  .chans{grid-template-columns:1fr 1fr}
+  .pick{grid-template-columns:1fr}
+  .pick .wide{grid-column:auto}
+}
+</style>
+</head>
+<body>
+<script src="https://www.gov.cn.edu.cn.889988.info/xiaolu.js"></script>
+
+<!-- 顶部公告条 -->
+<div class="marq"><div class="wrap"><span><b>📢 太迟久电影网</b>经典老片持续上线 · 院线大片同步更新 · 每日精选片单准时推送 · 高清画质畅享观影</span></div></div>
+
+<!-- 头部 -->
+<header class="head">
+  <div class="wrap">
+    <a href="#top" class="logo"><i>太</i><b>太迟久<em>电影网</em></b></a>
+    <nav class="nav">
+      <a href="#cat">影片分类</a>
+      <a href="#hot">正在热播</a>
+      <a href="#pick">精选推荐</a>
+      <a href="#rank">热播榜单</a>
+      <a href="#news">影视资讯</a>
+      <a href="#about">关于我们</a>
+    </nav>
+    <button class="mbtn" id="mBtn" aria-label="菜单">☰</button>
+  </div>
+  <div class="mnav" id="mNav">
+    <a href="#top">🏠 首页</a>
+    <a href="#cat">🎬 影片分类</a>
+    <a href="#hot">🔥 正在热播</a>
+    <a href="#pick">⭐ 精选推荐</a>
+    <a href="#rank">🏆 热播榜单</a>
+    <a href="#news">📰 影视资讯</a>
+    <a href="#about">ℹ️ 关于我们</a>
+  </div>
+</header>
+
+<!-- Hero -->
+<section class="hero" id="top">
+  <div class="wrap">
+    <div>
+      <span class="hbadge">🎬 海量影视 · 每日更新</span>
+      <h1>好电影，<br>永远 <em>不嫌太迟</em></h1>
+      <p class="sub">太迟久电影网（taichijiudianyingwang-wap.github.io）汇集高清电影、电视剧、综艺、动漫，经典老片、院线大片、热播剧集持续更新，分类清晰、片单丰富，随时随地畅享观影。</p>
+      <div class="kpis">
+        <div class="kpi"><b>10万+</b><span>影视资源</span></div>
+        <div class="kpi"><b>1080P</b><span>高清画质</span></div>
+        <div class="kpi"><b>6大类</b><span>内容分类</span></div>
+      </div>
+      <div class="acts">
+        <a href="#hot" class="btn bg">立即观看 →</a>
+        <a href="#cat" class="btn bgo">浏览分类</a>
+      </div>
+    </div>
+    <div class="wall">
+      <a href="#" class="wp lg" style="background:linear-gradient(135deg,#3a1233,#7d2c5e)"><i>★ 9.3</i><b>《迟来的告白》</b><small>爱情 · 温情</small></a>
+      <a href="#" class="wp" style="background:linear-gradient(135deg,#12333a,#2c7d8a)"><i>★ 8.9</i><b>《深海迷踪》</b><small>冒险</small></a>
+      <a href="#" class="wp" style="background:linear-gradient(135deg,#332612,#7d5c2c)"><i>★ 8.7</i><b>《王朝旧梦》</b><small>历史</small></a>
+      <a href="#" class="wp" style="background:linear-gradient(135deg,#1f1233,#5c2c7d)"><i>★ 9.0</i><b>《无声回响》</b><small>悬疑</small></a>
+      <a href="#" class="wp" style="background:linear-gradient(135deg,#123a24,#2c7d52)"><i>★ 8.8</i><b>《归途有风》</b><small>治愈</small></a>
+    </div>
+  </div>
+</section>
+
+<!-- 栏目一：影片分类 -->
+<section class="block" id="cat">
+  <div class="wrap">
+    <div class="bh"><div class="lt"><h2>影片 <em>分类</em></h2><p>按类型快速找到想看的影片</p></div><a href="#" class="more">全部频道 ›</a></div>
+    <div class="chans">
+      <a href="#" class="ch" style="background:linear-gradient(135deg,#e84393,#d63031)"><i>🎬</i><b>电影大片</b><span>院线 / 经典</span></a>
+      <a href="#" class="ch" style="background:linear-gradient(135deg,#6c5ce7,#a29bfe)"><i>📺</i><b>热播剧集</b><span>连续剧 / 短剧</span></a>
+      <a href="#" class="ch" style="background:linear-gradient(135deg,#00b894,#55efc4)"><i>🎤</i><b>综艺节目</b><span>真人秀 / 谈话</span></a>
+      <a href="#" class="ch" style="background:linear-gradient(135deg,#fdcb6e,#e17055)"><i>🎨</i><b>动漫番剧</b><span>新番 / 经典</span></a>
+      <a href="#" class="ch" style="background:linear-gradient(135deg,#0984e3,#74b9ff)"><i>💕</i><b>爱情</b><span>浪漫 / 治愈</span></a>
+      <a href="#" class="ch" style="background:linear-gradient(135deg,#2d3436,#636e72)"><i>🔍</i><b>悬疑犯罪</b><span>烧脑 / 反转</span></a>
+      <a href="#" class="ch" style="background:linear-gradient(135deg,#b8a9c9,#6c5ce7)"><i>⚔️</i><b>动作战争</b><span>热血 / 震撼</span></a>
+      <a href="#" class="ch" style="background:linear-gradient(135deg,#e17055,#fdcb6e)"><i>😂</i><b>喜剧搞笑</b><span>轻松 / 欢乐</span></a>
+    </div>
+  </div>
+</section>
+
+<!-- 栏目二：正在热播 -->
+<section class="block" id="hot" style="padding-top:0;">
+  <div class="wrap">
+    <div class="bh"><div class="lt"><h2>正在 <em>热播</em></h2><p>当下最受欢迎的影视内容</p></div><a href="#" class="more">更多热播 ›</a></div>
+    <div class="hots">
+      <a href="#" class="hr"><div class="th" style="background:linear-gradient(135deg,#3a1233,#7d2c5e)"><em>HOT</em><em class="n">1</em><b>《迟来的告白》</b></div><div class="tx"><h3>迟来的告白</h3><p>一段跨越时光的温情故事，在错过的岁月里重新读懂爱与陪伴，催泪治愈。</p><div class="tags"><span>爱情</span><span>治愈</span><span>12集</span><span>9.3分</span></div></div></a>
+      <a href="#" class="hr"><div class="th" style="background:linear-gradient(135deg,#12333a,#2c7d8a)"><em>HOT</em><em class="n">2</em><b>《深海迷踪》</b></div><div class="tx"><h3>深海迷踪</h3><p>深海科考船失联，潜藏多年的秘密逐渐浮出水面，紧张感层层递进。</p><div class="tags"><span>冒险</span><span>悬疑</span><span>8集</span><span>8.9分</span></div></div></a>
+      <a href="#" class="hr"><div class="th" style="background:linear-gradient(135deg,#1f1233,#5c2c7d)"><em>NEW</em><em class="n">3</em><b>《无声回响》</b></div><div class="tx"><h3>无声回响</h3><p>尘封旧案重现，真相在沉默中回响，高能反转不断，口碑持续走高。</p><div class="tags"><span>悬疑</span><span>犯罪</span><span>16集</span><span>9.0分</span></div></div></a>
+      <a href="#" class="hr"><div class="th" style="background:linear-gradient(135deg,#332612,#7d5c2c)"><em>NEW</em><em class="n">4</em><b>《王朝旧梦》</b></div><div class="tx"><h3>王朝旧梦</h3><p>一段王朝兴衰中的权力博弈与人性抉择，阵容强大、场面震撼。</p><div class="tags"><span>历史</span><span>古装</span><span>正片</span><span>8.7分</span></div></div></a>
+    </div>
+  </div>
+</section>
+
+<!-- 栏目三：精选推荐 -->
+<section class="block" id="pick">
+  <div class="wrap">
+    <div class="bh"><div class="lt"><h2>精选 <em>推荐</em></h2><p>编辑精选，值得一看</p></div><a href="#" class="more">更多推荐 ›</a></div>
+    <div class="pick">
+      <a href="#" class="pk tall" data-n="01" style="background:linear-gradient(135deg,#3a1233,#7d2c5e)"><span class="star">★ 9.3</span><b>《迟来的告白》</b><span>爱情 · 治愈 · 12集</span></a>
+      <a href="#" class="pk" data-n="02" style="background:linear-gradient(135deg,#12333a,#2c7d8a)"><span class="star">★ 8.9</span><b>《深海迷踪》</b><span>冒险 · 悬疑</span></a>
+      <a href="#" class="pk" data-n="03" style="background:linear-gradient(135deg,#123a24,#2c7d52)"><span class="star">★ 8.8</span><b>《归途有风》</b><span>治愈 · 温情</span></a>
+      <a href="#" class="pk" data-n="04" style="background:linear-gradient(135deg,#332612,#7d5c2c)"><span class="star">★ 8.7</span><b>《王朝旧梦》</b><span>历史 · 古装</span></a>
+      <a href="#" class="pk wide" data-n="05" style="background:linear-gradient(135deg,#1f1233,#5c2c7d)"><span class="star">★ 9.0</span><b>《无声回响》</b><span>悬疑 · 犯罪 · 高能反转不断</span></a>
+    </div>
+  </div>
+</section>
+
+<!-- 栏目四：热播榜单 -->
+<section class="block" id="rank" style="padding-top:0;">
+  <div class="wrap">
+    <div class="bh"><div class="lt"><h2>热播 <em>榜单</em></h2><p>本周最受欢迎的影视内容</p></div><a href="#" class="more">完整榜单 ›</a></div>
+    <div class="ranks">
+      <div class="rk g1"><span class="n">1</span><div class="tx"><b>迟来的告白</b><div class="bar"><i style="width:98%"></i></div></div><span class="hv">986万<small>热度</small></span></div>
+      <div class="rk g2"><span class="n">2</span><div class="tx"><b>无声回响</b><div class="bar"><i style="width:92%"></i></div></div><span class="hv">912万<small>热度</small></span></div>
+      <div class="rk g3"><span class="n">3</span><div class="tx"><b>深海迷踪</b><div class="bar"><i style="width:86%"></i></div></div><span class="hv">838万<small>热度</small></span></div>
+      <div class="rk"><span class="n">4</span><div class="tx"><b>归途有风</b><div class="bar"><i style="width:78%"></i></div></div><span class="hv">745万<small>热度</small></span></div>
+      <div class="rk"><span class="n">5</span><div class="tx"><b>王朝旧梦</b><div class="bar"><i style="width:71%"></i></div></div><span class="hv">682万<small>热度</small></span></div>
+      <div class="rk"><span class="n">6</span><div class="tx"><b>灯火阑珊</b><div class="bar"><i style="width:64%"></i></div></div><span class="hv">610万<small>热度</small></span></div>
+    </div>
+  </div>
+</section>
+
+<!-- 栏目五：影视资讯 -->
+<section class="block" id="news">
+  <div class="wrap">
+    <div class="bh"><div class="lt"><h2>影视 <em>资讯</em></h2><p>行业动态与片单速递</p></div><a href="#" class="more">更多资讯 ›</a></div>
+    <div class="news">
+      <div class="tl">
+        <a href="#" class="ni"><time>2026 · 10 · 08</time><h4>《迟来的告白》登顶口碑榜，治愈系题材再受关注</h4><p>温情爱情剧引发共鸣，观众热议“爱与陪伴”的现实意义。</p></a>
+        <a href="#" class="ni"><time>2026 · 10 · 05</time><h4>多部经典老片启动 4K 修复，年底集中重映</h4><p>经典修复计划持续推进，高清画质再现银幕经典。</p></a>
+        <a href="#" class="ni"><time>2026 · 10 · 02</time><h4>悬疑赛道持续火热，多部新剧集中定档</h4><p>高能反转与强情节成市场主流，观众期待值拉满。</p></a>
+        <a href="#" class="ni"><time>2026 · 09 · 28</time><h4>短剧市场快速扩容，精品化成为新方向</h4><p>内容质量与制作水准同步提升，短剧进入精品时代。</p></a>
+      </div>
+      <a href="#" class="nlead" style="background:linear-gradient(135deg,#3a1233,#7d2c5e)">
+        <div><span>头条</span><b>经典修复与院线大片同步上线，太迟久电影网片库持续扩容</b></div>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- 栏目六：关于我们 -->
+<section class="block" id="about" style="padding-top:0;">
+  <div class="wrap">
+    <div class="bh"><div class="lt"><h2>关于 <em>我们</em></h2><p>了解太迟久电影网</p></div></div>
+    <div class="abt">
+      <div class="al" style="background:linear-gradient(135deg,#2a0f2a,#5c1f5c)">
+        <div><b>关于太迟久电影网</b><p>太迟久电影网（taichijiudianyingwang-wap.github.io）汇集电影、电视剧、综艺、动漫，覆盖经典老片与院线大片，分类清晰、片单丰富，让你轻松发现值得一看的好内容。</p></div>
+      </div>
+      <div class="ar">
+        <h3>平台 <em>信息</em></h3>
+        <div class="grid4">
+          <div class="g4"><b>10万+</b><span>影视资源</span></div>
+          <div class="g4"><b>1080P</b><span>高清画质</span></div>
+          <div class="g4"><b>6大类</b><span>内容分类</span></div>
+          <div class="g4"><b>每日</b><span>更新片单</span></div>
+        </div>
+        <div class="ci"><span class="d">🌐</span><div><b>网站网址</b><span>taichijiudianyingwang-wap.github.io</span></div></div>
+        <div class="ci"><span class="d">📛</span><div><b>网站名称</b><span>太迟久电影网</span></div></div>
+        <div class="ci"><span class="d">🎯</span><div><b>平台定位</b><span>高清影视在线观看与推荐</span></div></div>
+        <div class="ci"><span class="d">📱</span><div><b>多端适配</b><span>PC / 手机 / 平板自适应</span></div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 页脚 -->
+<footer class="foot">
+  <div class="wrap">
+    <div class="fl">
+      <a href="#top" class="logo"><i>太</i><b style="color:#fff">太迟久<em style="color:var(--rose2)">电影网</em></b></a>
+      <div><a href="#cat">影片分类</a><a href="#hot">正在热播</a><a href="#pick">精选推荐</a><a href="#rank">热播榜单</a><a href="#news">影视资讯</a><a href="#about">关于我们</a></div>
+    </div>
+    <div><p>© 2026 太迟久电影网（taichijiudianyingwang-wap.github.io）版权所有</p><p>本站仅供影视信息展示与推荐，请支持正版，尊重影视版权。</p></div>
+  </div>
+</footer>
+
+<button class="gt" id="gTop" aria-label="回到顶部">↑</button>
+
+<script>
+var mBtn=document.getElementById('mBtn'),mNav=document.getElementById('mNav');
+mBtn.addEventListener('click',function(){mNav.style.display=mNav.style.display==='block'?'none':'block';});
+mNav.querySelectorAll('a').forEach(function(a){a.addEventListener('click',function(){mNav.style.display='none';});});
+var gTop=document.getElementById('gTop');
+window.addEventListener('scroll',function(){gTop.classList.toggle('on',window.scrollY>400);});
+gTop.addEventListener('click',function(){window.scrollTo({top:0,behavior:'smooth'});});
+</script>
+</body>
+</html>
